@@ -11,6 +11,7 @@ public class App {
     private boolean exit = false;
     private int figureNr;
     private Figure figure;
+    private int faktor = 3;
 
     // Konstruktor
     // input wird verwendet um Daten vom Benutzer einzulesen (verwendet scanner)
@@ -46,7 +47,7 @@ public class App {
 
         switch (figureNr) {
             case 1:
-                figure = new FigureH();
+                figure = new FigureH(3);
                 break;
             case 2:
                 figure = new FigureL();
